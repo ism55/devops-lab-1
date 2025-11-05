@@ -1,0 +1,109 @@
+sonarqube-1  | 2025.11.03 13:31:30 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+sonarqube-1  | 2025.11.03 13:31:30 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:{}]
+sonarqube-1  | 2025.11.03 13:31:30 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[ELASTICSEARCH] from [/opt/sonarqube/elasticsearch]: /opt/java/openjdk/bin/java -Xms4m -Xmx64m -XX:+UseSerialGC -Dcli.name=server -Dcli.script=./bin/elasticsearch -Dcli.libs=lib/tools/server-cli -Des.path.home=/opt/sonarqube/elasticsearch -Des.path.conf=/opt/sonarqube/temp/conf/es -Des.distribution.type=tar -cp /opt/sonarqube/elasticsearch/lib/*:/opt/sonarqube/elasticsearch/lib/cli-launcher/* org.elasticsearch.launcher.CliToolLauncher
+sonarqube-1  | 2025.11.03 13:31:30 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+sonarqube-1  | Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+sonarqube-1  | Nov 03, 2025 1:31:33 PM sun.util.locale.provider.LocaleProviderAdapter <clinit>
+sonarqube-1  | WARNING: COMPAT locale provider will be removed in a future release
+sonarqube-1  | 2025.11.03 13:31:34 INFO  es[][o.e.n.j.JdkVectorLibrary] vec_caps=1
+sonarqube-1  | 2025.11.03 13:31:34 INFO  es[][o.e.n.NativeAccess] Using native vector library; to disable start with -Dorg.elasticsearch.nativeaccess.enableVectorLibrary=false
+sonarqube-1  | 2025.11.03 13:31:34 INFO  es[][o.e.n.NativeAccess] Using [jdk] native provider and native methods for [Linux]
+sonarqube-1  | 2025.11.03 13:31:34 WARN  es[][o.a.l.i.v.VectorizationProvider] Java vector incubator module is not readable. For optimal vector performance, pass --add-modules jdk.incubator.vector to enable Vector API.
+sonarqube-1  | 2025.11.03 13:31:35 INFO  es[][o.e.n.Node] version[8.16.6], pid[114], build[tar/2eabb32aee47ed0c4ba71c169f098d0379402efe/2025-03-20T10:07:27.754027795Z], OS[Linux/5.15.0-139-generic/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/21.0.8/21.0.8+9-LTS]
+sonarqube-1  | 2025.11.03 13:31:35 INFO  es[][o.e.n.Node] JVM home [/opt/java/openjdk], using bundled JDK [false]
+sonarqube-1  | 2025.11.03 13:31:35 INFO  es[][o.e.n.Node] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -Djava.security.manager=allow, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --enable-native-access=org.elasticsearch.nativeaccess,org.apache.lucene.core, -XX:ReplayDataFile=logs/replay_pid%p.log, -Des.distribution.type=tar, -XX:+UseG1GC, -Djava.io.tmpdir=/opt/sonarqube/temp, -XX:ErrorFile=/opt/sonarqube/logs/es_hs_err_pid%p.log, -Xlog:disable, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djna.tmpdir=/opt/sonarqube/temp, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=COMPAT, -Des.enforce.bootstrap.checks=true, -Xms1024m, -Xmx1024m, -XX:MaxDirectMemorySize=536870912, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, --module-path=/opt/sonarqube/elasticsearch/lib, --add-modules=jdk.net, --add-modules=ALL-MODULE-PATH, -Djdk.module.main=org.elasticsearch.server]
+sonarqube-1  | 2025.11.03 13:31:35 INFO  es[][o.e.n.Node] Default Locale [en_US]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [rest-root]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-core]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-redact]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-security]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-geoip-enterprise-downloader]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-esql-core]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-apm-data]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [old-lucene-versions]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [counted-keyword]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [logsdb]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-inference]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [dot-prefix-validation]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [health-shards-availability]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [x-pack-otel-data]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [aggregations]
+sonarqube-1  | 2025.11.03 13:31:36 INFO  es[][o.e.p.PluginsService] loaded module [apm]
+sonarqube-1  | 2025.11.03 13:31:37 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/opt/sonarqube/data (/dev/sda5)]], net usable_space [8.1gb], net total_space [33.6gb], types [ext4]
+sonarqube-1  | 2025.11.03 13:31:37 INFO  es[][o.e.e.NodeEnvironment] heap size [1gb], compressed ordinary object pointers [true]
+sonarqube-1  | 2025.11.03 13:31:38 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [RuwShy66QDWS2354F0OR-w], cluster name [sonarqube], roles [ingest, data_cold, data, remote_cluster_client, master, data_warm, data_content, transform, data_hot, ml, data_frozen]
+sonarqube-1  | 2025.11.03 13:31:40 INFO  es[][o.e.i.r.RecoverySettings] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+sonarqube-1  | 2025.11.03 13:31:40 INFO  es[][o.e.f.FeatureService] Registered local node features [desired_node.version_deprecated, features_supported, file_settings, flattened.ignore_above_support, geoip.downloader.database.configuration, get_database_configuration_action.multi_node, health.extended_repository_indicator, knn_retriever_supported, license-trial-independent-version, mapper.boolean_dimension, mapper.flattened.ignore_above_with_arrays_support, mapper.ignore_above_index_level_setting, mapper.index_sorting_on_nested, mapper.keyword_dimension_ignore_above, mapper.keyword_normalizer_synthetic_source, mapper.pass_through_priority, mapper.query_index_mode, mapper.range.null_values_off_by_one_fix, mapper.segment_level_fields_stats, mapper.source.synthetic_source_copy_to_fix, mapper.source.synthetic_source_copy_to_inside_objects_fix, mapper.source.synthetic_source_fallback, mapper.source.synthetic_source_stored_fields_advance_fix, mapper.source.synthetic_source_with_copy_to_and_doc_values_false, mapper.subobjects_auto, mapper.subobjects_auto_fixes, mapper.synthetic_source_keep, mapper.track_ignored_source, mapper.vectors.bbq, mapper.vectors.bit_vectors, mapper.vectors.int4_quantization, put_database_configuration_action.ipinfo, random_reranker_retriever_supported, repositories.supports_usage_stats, rest.capabilities_action, rest.local_only_capabilities, retrievers_supported, routing.boolean_routing_path, routing.multi_value_routing_path, script.hamming, script.term_stats, search.vectors.k_param_supported, security.migration_framework, security.role_mapping_cleanup, security.roles_metadata_flattened, semantic_text.search_inference_id, simulate.component.template.substitutions, simulate.index.template.substitutions, simulate.mapping.validation, simulate.mapping.validation.templates, standard_retriever_supported, stats.include_disk_thresholds, text_similarity_reranker_retriever_composition_supported, text_similarity_reranker_retriever_supported, tsdb.ts_routing_hash_doc_value_parse_byte_ref, unified_highlighter_matched_fields, usage.data_tiers.precalculate_stats]
+sonarqube-1  | 2025.11.03 13:31:40 INFO  es[][o.e.c.m.DataStreamGlobalRetentionSettings] Updated default factory retention to [null]
+sonarqube-1  | 2025.11.03 13:31:40 INFO  es[][o.e.c.m.DataStreamGlobalRetentionSettings] Updated max factory retention to [null]
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.x.s.Security] Security is disabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.x.a.APMPlugin] APM ingest plugin is enabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.x.c.t.YamlTemplateRegistry] apm index template registry is enabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.x.o.OTelPlugin] OTel ingest plugin is enabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.x.c.t.YamlTemplateRegistry] OpenTelemetry index template registry is enabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.t.a.APM] Sending apm metrics is disabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.t.a.APM] Sending apm tracing is disabled
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.t.n.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=1gb}]
+sonarqube-1  | 2025.11.03 13:31:41 INFO  es[][o.e.d.DiscoveryModule] using discovery type [single-node] and seed hosts providers [settings]
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.n.Node] initialized
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.n.Node] starting ...
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:37653}, bound_addresses {127.0.0.1:37653}
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.b.BootstrapChecks] explicitly enforcing bootstrap checks
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.c.c.ClusterBootstrapService] this node is locked into cluster UUID [orHr9Y-2TOG_G1CaFDj8kA] and will not attempt further cluster bootstrapping
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined in term 4)[_FINISH_ELECTION_, {sonarqube}{RuwShy66QDWS2354F0OR-w}{g4Xwq4vJQ2Gr-AA9Y5izXA}{sonarqube}{127.0.0.1}{127.0.0.1:37653}{cdfhilmrstw}{8.16.6}{7000099-8518000} completing election], term: 4, version: 17, delta: master node changed {previous [], current [{sonarqube}{RuwShy66QDWS2354F0OR-w}{g4Xwq4vJQ2Gr-AA9Y5izXA}{sonarqube}{127.0.0.1}{127.0.0.1:37653}{cdfhilmrstw}{8.16.6}{7000099-8518000}]}
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{RuwShy66QDWS2354F0OR-w}{g4Xwq4vJQ2Gr-AA9Y5izXA}{sonarqube}{127.0.0.1}{127.0.0.1:37653}{cdfhilmrstw}{8.16.6}{7000099-8518000}]}, term: 4, version: 17, reason: Publication{term=4, version=17}
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.c.c.NodeJoinExecutor] node-join: [{sonarqube}{RuwShy66QDWS2354F0OR-w}{g4Xwq4vJQ2Gr-AA9Y5izXA}{sonarqube}{127.0.0.1}{127.0.0.1:37653}{cdfhilmrstw}{8.16.6}{7000099-8518000}] with reason [completing election]
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.n.Node] started {sonarqube}{RuwShy66QDWS2354F0OR-w}{g4Xwq4vJQ2Gr-AA9Y5izXA}{sonarqube}{127.0.0.1}{127.0.0.1:37653}{cdfhilmrstw}{8.16.6}{7000099-8518000}{xpack.installed=true, rack_id=sonarqube}
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.l.ClusterStateLicenseService] license [72a430ab-a154-443f-98bf-b87cda01019d] mode [basic] - valid
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.c.f.AbstractFileWatchingService] starting file watcher ...
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.c.f.AbstractFileWatchingService] file settings service up and running [tid=52]
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.g.GatewayService] recovered [0] indices into cluster_state
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.r.s.FileSettingsService] setting file [/opt/sonarqube/temp/conf/es/operator/settings.json] not found, initializing [file_settings] as empty
+sonarqube-1  | 2025.11.03 13:31:42 INFO  es[][o.e.h.n.s.HealthNodeTaskExecutor] Node [{sonarqube}{RuwShy66QDWS2354F0OR-w}] is selected as the current health node.
+sonarqube-1  | 2025.11.03 13:31:42 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+sonarqube-1  | 2025.11.03 13:31:42 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[WEB_SERVER] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-25.10.0.114319.jar:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.7.7.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process12843832585742747178properties
+sonarqube-1  | 2025.11.03 13:31:43 INFO  web[][o.s.p.ProcessEntryPoint] Starting Web Server
+sonarqube-1  | 2025.11.03 13:31:43 INFO  web[][o.s.s.a.TomcatHttpConnectorFactory] Starting Tomcat on port 9000
+sonarqube-1  | Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+sonarqube-1  | 2025.11.03 13:31:44 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 25.10.0.114319 / 16d4771251280b1b8cbbf40229e24c2b5ac83d7e
+sonarqube-1  | 2025.11.03 13:31:44 INFO  web[][o.s.d.DefaultDatabase] Create JDBC data source for jdbc:postgresql://db:5432/sonar
+sonarqube-1  | 2025.11.03 13:31:44 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
+sonarqube-1  | 2025.11.03 13:31:45 INFO  web[][c.z.h.p.HikariPool] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bd0b0e5
+sonarqube-1  | 2025.11.03 13:31:45 INFO  web[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+sonarqube-1  | 2025.11.03 13:31:46 WARN  web[][o.s.s.p.DatabaseServerCompatibility] The database must be manually upgraded. Please backup the database and browse /setup. For more information: https://docs.sonarsource.com/sonarqube-community-build/server-upgrade-and-maintenance/upgrade/upgrade-the-server/roadmap
+sonarqube-1  | 2025.11.03 13:31:46 WARN  app[][startup] ################################################################################
+sonarqube-1  | 2025.11.03 13:31:46 WARN  app[][startup] The database must be manually upgraded. Please backup the database and browse /setup. For more information: https://docs.sonarsource.com/sonarqube-community-build/server-upgrade-and-maintenance/upgrade/upgrade-the-server/roadmap
+sonarqube-1  | 2025.11.03 13:31:46 WARN  app[][startup] ################################################################################
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy C# Code Quality and Security / 10.15.0.120848 / 89326728cf637c9935206b2fa0b4b1dea083bda0
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Clean as You Code / 2.4.0.2018 / c2f7910f6ecac6faa73001eeac4bd79a2db98cd3
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Flex Code Quality and Security / 2.14.0.5032 / 005476cddc54a18b78eca55d10338702eb31e4b0
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Go Code Quality and Security / 1.28.0.3761 / 790d502c16f2c818d4032526f27c67206fe94be1
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy HTML Code Quality and Security / 3.19.0.5695 / 4d6d79c1783726575bb4d5bd72f4873e46a99e5f
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy IaC Code Quality and Security / 1.50.0.16452 / null
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy JaCoCo / 1.3.0.1538 / 74a7798c7cea687c72ed9df40c93eb7ea2a58c49
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Java Advanced Code Quality Analyzer / 8.16.1.344 / 3a7e6c6f52cf8c5793d9e92d92413c4193657c26
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Java Code Quality and Security / 8.19.0.40387 / f89e3f9b4bfaa3facf236ac3edac369237389eab
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy JavaScript/TypeScript/CSS Code Quality and Security / 11.4.1.34873 / 87a13b2273a393724ca1822c234b501f07588d69
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Kotlin Code Quality and Security / 3.3.0.7402 / 1beb40c315e3605c44594e752121a0ff123d2a7d
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy PHP Code Quality and Security / 3.49.0.13624 / null
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Python Code Quality and Security / 5.10.0.25429 / d270322b78e9fef1b5a59f01b55eba913ec08776
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Ruby Code Quality and Security / 1.19.0.471 / 415d28ce6fa5adf005ce5eef827cec15af9c14cf
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Rust Code Quality and Security / 1.1.0.1088 / null
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Scala Code Quality and Security / 1.19.0.484 / 97a215c0534ecba8b6bc3e32c2589cbd86452170
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy Text Code Quality and Security / 2.30.0.8328 / null
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy VB.NET Code Quality and Security / 10.15.0.120848 / 89326728cf637c9935206b2fa0b4b1dea083bda0
+sonarqube-1  | 2025.11.03 13:31:46 INFO  web[][o.s.s.p.ServerPluginManager] Deploy XML Code Quality and Security / 2.13.0.5938 / 18b3322855f8543906e10b25f9c57d2f81276c76
+sonarqube-1  | 2025.11.03 13:31:48 INFO  web[][o.s.s.p.d.m.c.PostgresCharsetHandler] Verify that database charset supports UTF8
+sonarqube-1  | 2025.11.03 13:31:48 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://localhost:9001]
+sonarqube-1  | 2025.11.03 13:31:48 INFO  web[][o.s.s.p.Platform] Database needs to be migrated. Please refer to https://docs.sonarsource.com/sonarqube-community-build/server-upgrade-and-maintenance/upgrade/upgrade-the-server/roadmap
+sonarqube-1  | 2025.11.03 13:31:48 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@70b33256 [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+sonarqube-1  | 2025.11.03 13:31:48 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.NoCacheFilter@2eb1c615 [pattern=UrlPattern{inclusions=[/api/v2/*], exclusions=[]}]
+sonarqube-1  | 2025.11.03 13:31:49 INFO  web[][o.h.v.i.util.Version] HV000001: Hibernate Validator 9.0.1.Final
