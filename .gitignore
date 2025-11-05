@@ -1,0 +1,136 @@
+# ======================
+# General / System Files
+# ======================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
+
+# ================
+# IDEs / Editors
+# ================
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# ==================
+# OS / Shell History
+# ==================
+*.bash_history
+*.zsh_history
+*.sh~
+.history
+
+# ================
+# Python / Scripts
+# ================
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+Pipfile.lock
+.poetry/
+
+# ==================
+# Node / Frontend
+# ==================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+
+# ==============
+# Docker
+# ==============
+**/.docker/
+docker-compose.override.yml
+*.tar
+*.pid
+*.sock
+
+# =================
+# Terraform
+# =================
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+terraform.tfvars.json
+
+# =================
+# Ansible
+# =================
+*.retry
+*.vault_pass.txt
+.vagrant/
+*.cfg
+
+# =================
+# Kubernetes / Helm
+# =================
+*.yaml~
+*.yml~
+chart.lock
+charts/
+tmp/
+values.override.yaml
+
+# =================
+# CI/CD Pipelines
+# =================
+# GitHub Actions
+.github/workflows/*.yml~
+# Jenkins
+jenkins_home/
+# GitLab
+.gitlab-ci.yml~
+
+# =================
+# Secrets / Keys
+# =================
+*.pem
+*.key
+*.crt
+*.p12
+*.cer
+*.jks
+*.kubeconfig
+secrets.yaml
+secrets.json
+.env.local
+.env.prod
+.env.dev
+
+# =================
+# Cloud Providers
+# =================
+# AWS
+.aws/
+*.pem
+credentials
+# Azure
+*.azure
+# GCP
+*.json
+.gcloud/
+
+# GitHub self-hosted runner
+actions-runner/
